@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691C687987AEB896B4688415 /* Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5256DC5EC6B11324551D5D /* Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework */; };
 		9C523E002543DC81005D2095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523DFF2543DC81005D2095 /* AppDelegate.swift */; };
 		9C523E022543DC81005D2095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E012543DC81005D2095 /* SceneDelegate.swift */; };
 		9C523E042543DC81005D2095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E032543DC81005D2095 /* ViewController.swift */; };
@@ -15,6 +16,10 @@
 		9C523E0C2543DC84005D2095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C523E0A2543DC84005D2095 /* LaunchScreen.storyboard */; };
 		9C523E172543DC84005D2095 /* ToyRxGithubJobsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E162543DC84005D2095 /* ToyRxGithubJobsTests.swift */; };
 		9C523E222543DC84005D2095 /* ToyRxGithubJobsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E212543DC84005D2095 /* ToyRxGithubJobsUITests.swift */; };
+		9C523E6325447DC3005D2095 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E6225447DC3005D2095 /* API.swift */; };
+		9C523E6825447F0C005D2095 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E6725447F0C005D2095 /* Job.swift */; };
+		A3AC9048FD30ED17A9F264EC /* Pods_ToyRxGithubJobsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C445A7058F1975219D1A9 /* Pods_ToyRxGithubJobsTests.framework */; };
+		A4C8CF4266166CD6609A03E5 /* Pods_ToyRxGithubJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6126014DA83796B9A2864A85 /* Pods_ToyRxGithubJobs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01FD174F33EFCDC1E2816CE5 /* Pods-ToyRxGithubJobsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobsTests.release.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobsTests/Pods-ToyRxGithubJobsTests.release.xcconfig"; sourceTree = "<group>"; };
+		14278BE16DFA3C2D7C70548E /* Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.release.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		517C445A7058F1975219D1A9 /* Pods_ToyRxGithubJobsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyRxGithubJobsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6126014DA83796B9A2864A85 /* Pods_ToyRxGithubJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyRxGithubJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5256DC5EC6B11324551D5D /* Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F99045B5C57CCFA4534534 /* Pods-ToyRxGithubJobsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobsTests.debug.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobsTests/Pods-ToyRxGithubJobsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C523DFC2543DC81005D2095 /* ToyRxGithubJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyRxGithubJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C523DFF2543DC81005D2095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C523E012543DC81005D2095 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,11 @@
 		9C523E1D2543DC84005D2095 /* ToyRxGithubJobsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyRxGithubJobsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C523E212543DC84005D2095 /* ToyRxGithubJobsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyRxGithubJobsUITests.swift; sourceTree = "<group>"; };
 		9C523E232543DC84005D2095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C523E6225447DC3005D2095 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9C523E6725447F0C005D2095 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		A67F851531B4C8B6BEFE94C6 /* Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8240FE0287D22939FD450BA /* Pods-ToyRxGithubJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobs.release.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobs/Pods-ToyRxGithubJobs.release.xcconfig"; sourceTree = "<group>"; };
+		C0B95FC80CF9EA6B61DA224A /* Pods-ToyRxGithubJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobs.debug.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobs/Pods-ToyRxGithubJobs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C8CF4266166CD6609A03E5 /* Pods_ToyRxGithubJobs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AC9048FD30ED17A9F264EC /* Pods_ToyRxGithubJobsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691C687987AEB896B4688415 /* Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2805A72B3EF82D5D6EC3F918 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6126014DA83796B9A2864A85 /* Pods_ToyRxGithubJobs.framework */,
+				6D5256DC5EC6B11324551D5D /* Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework */,
+				517C445A7058F1975219D1A9 /* Pods_ToyRxGithubJobsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C523DF32543DC81005D2095 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				9C523E152543DC84005D2095 /* ToyRxGithubJobsTests */,
 				9C523E202543DC84005D2095 /* ToyRxGithubJobsUITests */,
 				9C523DFD2543DC81005D2095 /* Products */,
+				ECC0869D763E3B1281BB34DE /* Pods */,
+				2805A72B3EF82D5D6EC3F918 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +130,12 @@
 		9C523DFE2543DC81005D2095 /* ToyRxGithubJobs */ = {
 			isa = PBXGroup;
 			children = (
+				9C523E7325448491005D2095 /* Cells */,
 				9C523DFF2543DC81005D2095 /* AppDelegate.swift */,
 				9C523E012543DC81005D2095 /* SceneDelegate.swift */,
 				9C523E032543DC81005D2095 /* ViewController.swift */,
+				9C523E6725447F0C005D2095 /* Job.swift */,
+				9C523E6225447DC3005D2095 /* API.swift */,
 				9C523E052543DC81005D2095 /* Main.storyboard */,
 				9C523E082543DC84005D2095 /* Assets.xcassets */,
 				9C523E0A2543DC84005D2095 /* LaunchScreen.storyboard */,
@@ -128,6 +162,26 @@
 			path = ToyRxGithubJobsUITests;
 			sourceTree = "<group>";
 		};
+		9C523E7325448491005D2095 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ECC0869D763E3B1281BB34DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0B95FC80CF9EA6B61DA224A /* Pods-ToyRxGithubJobs.debug.xcconfig */,
+				A8240FE0287D22939FD450BA /* Pods-ToyRxGithubJobs.release.xcconfig */,
+				A67F851531B4C8B6BEFE94C6 /* Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig */,
+				14278BE16DFA3C2D7C70548E /* Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.release.xcconfig */,
+				84F99045B5C57CCFA4534534 /* Pods-ToyRxGithubJobsTests.debug.xcconfig */,
+				01FD174F33EFCDC1E2816CE5 /* Pods-ToyRxGithubJobsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C523E262543DC84005D2095 /* Build configuration list for PBXNativeTarget "ToyRxGithubJobs" */;
 			buildPhases = (
+				F30902621043569D5EE67677 /* [CP] Check Pods Manifest.lock */,
 				9C523DF82543DC81005D2095 /* Sources */,
 				9C523DF92543DC81005D2095 /* Frameworks */,
 				9C523DFA2543DC81005D2095 /* Resources */,
+				5387AF8D0ECF45474142E4C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C523E292543DC84005D2095 /* Build configuration list for PBXNativeTarget "ToyRxGithubJobsTests" */;
 			buildPhases = (
+				98A9F2630F76DAC85CDA17D1 /* [CP] Check Pods Manifest.lock */,
 				9C523E0E2543DC84005D2095 /* Sources */,
 				9C523E0F2543DC84005D2095 /* Frameworks */,
 				9C523E102543DC84005D2095 /* Resources */,
@@ -170,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C523E2C2543DC84005D2095 /* Build configuration list for PBXNativeTarget "ToyRxGithubJobsUITests" */;
 			buildPhases = (
+				5C1D32680C64492B2B45EF4D /* [CP] Check Pods Manifest.lock */,
 				9C523E192543DC84005D2095 /* Sources */,
 				9C523E1A2543DC84005D2095 /* Frameworks */,
 				9C523E1B2543DC84005D2095 /* Resources */,
+				287C3ACD63BB6242F88EF0CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +312,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		287C3ACD63BB6242F88EF0CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5387AF8D0ECF45474142E4C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyRxGithubJobs/Pods-ToyRxGithubJobs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyRxGithubJobs/Pods-ToyRxGithubJobs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToyRxGithubJobs/Pods-ToyRxGithubJobs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C1D32680C64492B2B45EF4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A9F2630F76DAC85CDA17D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyRxGithubJobsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30902621043569D5EE67677 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyRxGithubJobs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C523DF82543DC81005D2095 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +422,9 @@
 			files = (
 				9C523E042543DC81005D2095 /* ViewController.swift in Sources */,
 				9C523E002543DC81005D2095 /* AppDelegate.swift in Sources */,
+				9C523E6325447DC3005D2095 /* API.swift in Sources */,
 				9C523E022543DC81005D2095 /* SceneDelegate.swift in Sources */,
+				9C523E6825447F0C005D2095 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +597,7 @@
 		};
 		9C523E272543DC84005D2095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B95FC80CF9EA6B61DA224A /* Pods-ToyRxGithubJobs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +616,7 @@
 		};
 		9C523E282543DC84005D2095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8240FE0287D22939FD450BA /* Pods-ToyRxGithubJobs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +635,7 @@
 		};
 		9C523E2A2543DC84005D2095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F99045B5C57CCFA4534534 /* Pods-ToyRxGithubJobsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +657,7 @@
 		};
 		9C523E2B2543DC84005D2095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FD174F33EFCDC1E2816CE5 /* Pods-ToyRxGithubJobsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +679,7 @@
 		};
 		9C523E2D2543DC84005D2095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67F851531B4C8B6BEFE94C6 /* Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +699,7 @@
 		};
 		9C523E2E2543DC84005D2095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14278BE16DFA3C2D7C70548E /* Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
