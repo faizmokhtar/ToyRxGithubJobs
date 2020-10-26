@@ -18,48 +18,41 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        tableView.delegate = self
-        tableView.dataSource = self
-
         setupObserver()
+        setupUIBinding()
     }
 
     func setupObserver() {
         API.shared.getJobs(for: "go")
             .observeOn(MainScheduler.instance)
+            .do(onNext: { [weak self] _ in
+                self?.tableView.reloadData()
+            })
             .subscribe(onNext: { [weak self] data in
                 self?.jobs.accept(data)
             })
             .disposed(by: bag)
-        
-        jobs.asObservable().subscribe(onNext: { [weak self] _ in
-            self?.tableView.reloadData()
-        })
-        .disposed(by: bag)
-    }
-}
-
-extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return jobs.value.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier:
-          "cell", for: indexPath)
-
-        let job = jobs.value[indexPath.row]
+    func setupUIBinding() {
+        jobs.bind(to: tableView.rx.items) { tableView, index, element in
+            let cell: UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+            cell.textLabel?.text = element.title
+            cell.detailTextLabel?.text = element.company
+            return cell
+        }
+        .disposed(by: bag)
         
-        cell.textLabel?.text = job.title
-        cell.detailTextLabel?.text = job.company
-
-        return cell
-    }
-}
-
-extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        tableView.rx.modelSelected(Job.self)
+            .subscribe(onNext: { job in
+                print("job \(job.title) is selected")
+            })
+            .disposed(by: bag)
+        
+        tableView.rx.itemSelected
+            .subscribe(onNext: { [weak self] itemSelected in
+                self?.tableView.deselectRow(at: itemSelected, animated: true)
+            })
+            .disposed(by: bag)
     }
 }
