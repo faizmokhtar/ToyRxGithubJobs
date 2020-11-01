@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let vc = JobListController()
         let nav = UINavigationController(rootViewController: vc)
-
+        nav.navigationBar.isTranslucent = false
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = nav
         window.makeKeyAndVisible()

@@ -134,10 +134,10 @@
 		9C523DFE2543DC81005D2095 /* ToyRxGithubJobs */ = {
 			isa = PBXGroup;
 			children = (
+				9CBC7126254EBF48003DDEF0 /* Models */,
 				9CBC70DF254DA8F2003DDEF0 /* JobList */,
 				9C523DFF2543DC81005D2095 /* AppDelegate.swift */,
 				9C523E012543DC81005D2095 /* SceneDelegate.swift */,
-				9C523E6725447F0C005D2095 /* Job.swift */,
 				9C523E6225447DC3005D2095 /* API.swift */,
 				9C523E082543DC84005D2095 /* Assets.xcassets */,
 				9C523E0A2543DC84005D2095 /* LaunchScreen.storyboard */,
@@ -181,6 +181,14 @@
 				9CBC70F6254DBD93003DDEF0 /* JobCellViewModel.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9CBC7126254EBF48003DDEF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C523E6725447F0C005D2095 /* Job.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		ECC0869D763E3B1281BB34DE /* Pods */ = {
