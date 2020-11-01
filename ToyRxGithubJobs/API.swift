@@ -14,7 +14,7 @@ class API {
     static let shared = API()
     
     private let session = Session.default
-    
+
     func getJobs(for language: String) -> Observable<[Job]> {
         let urlString = "https://jobs.github.com/positions.json?search=\(language)"
         

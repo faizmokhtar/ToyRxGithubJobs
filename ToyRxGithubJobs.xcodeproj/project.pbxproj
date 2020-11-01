@@ -10,14 +10,16 @@
 		691C687987AEB896B4688415 /* Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5256DC5EC6B11324551D5D /* Pods_ToyRxGithubJobs_ToyRxGithubJobsUITests.framework */; };
 		9C523E002543DC81005D2095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523DFF2543DC81005D2095 /* AppDelegate.swift */; };
 		9C523E022543DC81005D2095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E012543DC81005D2095 /* SceneDelegate.swift */; };
-		9C523E042543DC81005D2095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E032543DC81005D2095 /* ViewController.swift */; };
-		9C523E072543DC81005D2095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C523E052543DC81005D2095 /* Main.storyboard */; };
 		9C523E092543DC84005D2095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C523E082543DC84005D2095 /* Assets.xcassets */; };
 		9C523E0C2543DC84005D2095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C523E0A2543DC84005D2095 /* LaunchScreen.storyboard */; };
 		9C523E172543DC84005D2095 /* ToyRxGithubJobsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E162543DC84005D2095 /* ToyRxGithubJobsTests.swift */; };
 		9C523E222543DC84005D2095 /* ToyRxGithubJobsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E212543DC84005D2095 /* ToyRxGithubJobsUITests.swift */; };
 		9C523E6325447DC3005D2095 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E6225447DC3005D2095 /* API.swift */; };
 		9C523E6825447F0C005D2095 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C523E6725447F0C005D2095 /* Job.swift */; };
+		9CBC70E1254DA93C003DDEF0 /* JobListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC70E0254DA93C003DDEF0 /* JobListController.swift */; };
+		9CBC70EC254DB1FA003DDEF0 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC70EB254DB1FA003DDEF0 /* JobListViewModel.swift */; };
+		9CBC70F2254DB8D5003DDEF0 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC70F1254DB8D5003DDEF0 /* JobCell.swift */; };
+		9CBC70F7254DBD93003DDEF0 /* JobCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC70F6254DBD93003DDEF0 /* JobCellViewModel.swift */; };
 		A3AC9048FD30ED17A9F264EC /* Pods_ToyRxGithubJobsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C445A7058F1975219D1A9 /* Pods_ToyRxGithubJobsTests.framework */; };
 		A4C8CF4266166CD6609A03E5 /* Pods_ToyRxGithubJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6126014DA83796B9A2864A85 /* Pods_ToyRxGithubJobs.framework */; };
 /* End PBXBuildFile section */
@@ -49,8 +51,6 @@
 		9C523DFC2543DC81005D2095 /* ToyRxGithubJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyRxGithubJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C523DFF2543DC81005D2095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C523E012543DC81005D2095 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C523E032543DC81005D2095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C523E062543DC81005D2095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C523E082543DC84005D2095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C523E0B2543DC84005D2095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C523E0D2543DC84005D2095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +62,10 @@
 		9C523E232543DC84005D2095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C523E6225447DC3005D2095 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9C523E6725447F0C005D2095 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		9CBC70E0254DA93C003DDEF0 /* JobListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListController.swift; sourceTree = "<group>"; };
+		9CBC70EB254DB1FA003DDEF0 /* JobListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
+		9CBC70F1254DB8D5003DDEF0 /* JobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		9CBC70F6254DBD93003DDEF0 /* JobCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellViewModel.swift; sourceTree = "<group>"; };
 		A67F851531B4C8B6BEFE94C6 /* Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests/Pods-ToyRxGithubJobs-ToyRxGithubJobsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8240FE0287D22939FD450BA /* Pods-ToyRxGithubJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobs.release.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobs/Pods-ToyRxGithubJobs.release.xcconfig"; sourceTree = "<group>"; };
 		C0B95FC80CF9EA6B61DA224A /* Pods-ToyRxGithubJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyRxGithubJobs.debug.xcconfig"; path = "Target Support Files/Pods-ToyRxGithubJobs/Pods-ToyRxGithubJobs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,13 +134,11 @@
 		9C523DFE2543DC81005D2095 /* ToyRxGithubJobs */ = {
 			isa = PBXGroup;
 			children = (
-				9C523E7325448491005D2095 /* Cells */,
+				9CBC70DF254DA8F2003DDEF0 /* JobList */,
 				9C523DFF2543DC81005D2095 /* AppDelegate.swift */,
 				9C523E012543DC81005D2095 /* SceneDelegate.swift */,
-				9C523E032543DC81005D2095 /* ViewController.swift */,
 				9C523E6725447F0C005D2095 /* Job.swift */,
 				9C523E6225447DC3005D2095 /* API.swift */,
-				9C523E052543DC81005D2095 /* Main.storyboard */,
 				9C523E082543DC84005D2095 /* Assets.xcassets */,
 				9C523E0A2543DC84005D2095 /* LaunchScreen.storyboard */,
 				9C523E0D2543DC84005D2095 /* Info.plist */,
@@ -162,11 +164,23 @@
 			path = ToyRxGithubJobsUITests;
 			sourceTree = "<group>";
 		};
-		9C523E7325448491005D2095 /* Cells */ = {
+		9CBC70DF254DA8F2003DDEF0 /* JobList */ = {
 			isa = PBXGroup;
 			children = (
+				9CBC70F0254DB8B3003DDEF0 /* Views */,
+				9CBC70E0254DA93C003DDEF0 /* JobListController.swift */,
+				9CBC70EB254DB1FA003DDEF0 /* JobListViewModel.swift */,
 			);
-			path = Cells;
+			path = JobList;
+			sourceTree = "<group>";
+		};
+		9CBC70F0254DB8B3003DDEF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CBC70F1254DB8D5003DDEF0 /* JobCell.swift */,
+				9CBC70F6254DBD93003DDEF0 /* JobCellViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ECC0869D763E3B1281BB34DE /* Pods */ = {
@@ -292,7 +306,6 @@
 			files = (
 				9C523E0C2543DC84005D2095 /* LaunchScreen.storyboard in Resources */,
 				9C523E092543DC84005D2095 /* Assets.xcassets in Resources */,
-				9C523E072543DC81005D2095 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,10 +433,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C523E042543DC81005D2095 /* ViewController.swift in Sources */,
 				9C523E002543DC81005D2095 /* AppDelegate.swift in Sources */,
+				9CBC70EC254DB1FA003DDEF0 /* JobListViewModel.swift in Sources */,
+				9CBC70F2254DB8D5003DDEF0 /* JobCell.swift in Sources */,
 				9C523E6325447DC3005D2095 /* API.swift in Sources */,
+				9CBC70E1254DA93C003DDEF0 /* JobListController.swift in Sources */,
 				9C523E022543DC81005D2095 /* SceneDelegate.swift in Sources */,
+				9CBC70F7254DBD93003DDEF0 /* JobCellViewModel.swift in Sources */,
 				9C523E6825447F0C005D2095 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,14 +476,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9C523E052543DC81005D2095 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C523E062543DC81005D2095 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C523E0A2543DC84005D2095 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
